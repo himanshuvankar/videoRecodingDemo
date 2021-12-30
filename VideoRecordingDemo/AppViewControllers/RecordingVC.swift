@@ -7,6 +7,7 @@
 
 import UIKit
 import Photos
+import MediaWatermark
 class RecordingVC: UIViewController {
 
     //MARK: - Outlets
@@ -92,36 +93,6 @@ class RecordingVC: UIViewController {
         }
     }
     
-    func checkPermission(completion: @escaping ()->Void) {
-        let photoAuthorizationStatus = PHPhotoLibrary.authorizationStatus()
-        switch photoAuthorizationStatus {
-        case .authorized:
-            print("Access is granted by user")
-            completion()
-        case .notDetermined:
-            PHPhotoLibrary.requestAuthorization({
-                (newStatus) in
-                print("status is \(newStatus)")
-                if newStatus ==  PHAuthorizationStatus.authorized {
-                    /* do stuff here */
-                    completion()
-                    print("success")
-                }
-            })
-            print("It is not determined until now")
-        case .restricted:
-            // same same
-            print("User do not have access to photo album.")
-        case .denied:
-            // same same
-            print("User has denied the permission.")
-        case .limited:
-            print("It is not determined until now")
-        @unknown default:
-            print("It is not determined until now")
-        }
-    }
-    
     @objc fileprivate func showToastForSaved() {
         showToast(message: "Saved!", fontSize: 12.0)
     }
@@ -180,7 +151,30 @@ class RecordingVC: UIViewController {
             
         }
     }
-    
+}
+//MARK: - WaterMark Code
+extension RecordingVC{
+    func processVideo(url: URL) {
+        
+        if let item = MediaItem(url: url) {
+            // create attributed string
+            let myString = "Creditt"
+            let myAttribute = [ NSAttributedString.Key.foregroundColor: UIColor.blue ,NSAttributedString.Key.font: UIFont.systemFont(ofSize: 25) ]
+            let myAttrString = NSAttributedString(string: myString, attributes: myAttribute)
+            
+            let WaterMark = MediaElement(text: myAttrString)
+            WaterMark.frame = CGRect(x: 150, y: 150, width: 200, height: 50)
+            
+            item.add(elements: [WaterMark])
+            
+            let mediaProcessor = MediaProcessor()
+            mediaProcessor.processElements(item: item) { [weak self] (result, error) in
+                DispatchQueue.main.async {
+//                    self?.playVideo(url: result.processedUrl!, view: (self?.resultImageView)!)
+                }
+            }
+        }
+    }
 }
 //MARK: - Model get Video
 struct MediaSelect {

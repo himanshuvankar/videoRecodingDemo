@@ -32,7 +32,8 @@ class VideoPlayVC: UIViewController {
     }
     //MARK: - Local methods
     private func setupView(){
-        
+        CameraView.layer.cornerRadius = 10
+        CameraView.clipsToBounds = true
         initializeVideoPlayerWithVideo()
     }
     func initializeVideoPlayerWithVideo() {
