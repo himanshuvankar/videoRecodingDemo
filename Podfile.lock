@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (4.9.1)
+  - MediaWatermark (0.4.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - MediaWatermark
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - MediaWatermark
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  MediaWatermark: d67db91deaaa9403220899adfb59c80221a02a7d
+
+PODFILE CHECKSUM: 897167e0a2ea2f36f176989cac799c76d95e538c
+
+COCOAPODS: 1.11.2

@@ -7,25 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45A2B1600CBF0BA7EDA70418 /* Pods_VideoRecordingDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 342E20B0677E638F6F61C8AD /* Pods_VideoRecordingDemo.framework */; };
 		4C8707DB277CB8A5007D54F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8707DA277CB8A5007D54F6 /* AppDelegate.swift */; };
-		4C8707DD277CB8A5007D54F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8707DC277CB8A5007D54F6 /* SceneDelegate.swift */; };
-		4C8707DF277CB8A5007D54F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8707DE277CB8A5007D54F6 /* ViewController.swift */; };
+		4C8707DF277CB8A5007D54F6 /* RecordingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8707DE277CB8A5007D54F6 /* RecordingVC.swift */; };
 		4C8707E2277CB8A5007D54F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8707E0277CB8A5007D54F6 /* Main.storyboard */; };
 		4C8707E5277CB8A5007D54F6 /* VideoRecordingDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4C8707E3277CB8A5007D54F6 /* VideoRecordingDemo.xcdatamodeld */; };
 		4C8707E7277CB8A7007D54F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C8707E6277CB8A7007D54F6 /* Assets.xcassets */; };
 		4C8707EA277CB8A7007D54F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C8707E8277CB8A7007D54F6 /* LaunchScreen.storyboard */; };
+		4C8707F4277CBA89007D54F6 /* CameraConfigration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8707F3277CBA89007D54F6 /* CameraConfigration.swift */; };
+		4C8707F6277CBF84007D54F6 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8707F5277CBF84007D54F6 /* UIViewControllerExtensions.swift */; };
+		4C8707F9277CCE8F007D54F6 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8707F8277CCE8F007D54F6 /* Constant.swift */; };
+		4C8707FC277CCFB4007D54F6 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8707FB277CCFB4007D54F6 /* Extension.swift */; };
+		4C870800277CD849007D54F6 /* VideoPlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8707FF277CD849007D54F6 /* VideoPlayVC.swift */; };
+		4C870803277CDD42007D54F6 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C870802277CDD42007D54F6 /* Player.swift */; };
+		4C870805277CE121007D54F6 /* SampleVideo_360x240_1mb.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 4C870804277CE121007D54F6 /* SampleVideo_360x240_1mb.mp4 */; };
+		4C870808277CEF41007D54F6 /* SingleTon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C870807277CEF41007D54F6 /* SingleTon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		342E20B0677E638F6F61C8AD /* Pods_VideoRecordingDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VideoRecordingDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8707D7277CB8A5007D54F6 /* VideoRecordingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoRecordingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C8707DA277CB8A5007D54F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C8707DC277CB8A5007D54F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4C8707DE277CB8A5007D54F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C8707DE277CB8A5007D54F6 /* RecordingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingVC.swift; sourceTree = "<group>"; };
 		4C8707E1277CB8A5007D54F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C8707E4277CB8A5007D54F6 /* VideoRecordingDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VideoRecordingDemo.xcdatamodel; sourceTree = "<group>"; };
 		4C8707E6277CB8A7007D54F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C8707E9277CB8A7007D54F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C8707EB277CB8A7007D54F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C8707F3277CBA89007D54F6 /* CameraConfigration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraConfigration.swift; sourceTree = "<group>"; };
+		4C8707F5277CBF84007D54F6 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		4C8707F8277CCE8F007D54F6 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		4C8707FB277CCFB4007D54F6 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		4C8707FF277CD849007D54F6 /* VideoPlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayVC.swift; sourceTree = "<group>"; };
+		4C870802277CDD42007D54F6 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		4C870804277CE121007D54F6 /* SampleVideo_360x240_1mb.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = SampleVideo_360x240_1mb.mp4; sourceTree = "<group>"; };
+		4C870807277CEF41007D54F6 /* SingleTon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleTon.swift; sourceTree = "<group>"; };
+		885F5D7529464B20092877DD /* Pods-VideoRecordingDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoRecordingDemo.release.xcconfig"; path = "Target Support Files/Pods-VideoRecordingDemo/Pods-VideoRecordingDemo.release.xcconfig"; sourceTree = "<group>"; };
+		AB2A1D56972E3B108F50616F /* Pods-VideoRecordingDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VideoRecordingDemo.debug.xcconfig"; path = "Target Support Files/Pods-VideoRecordingDemo/Pods-VideoRecordingDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45A2B1600CBF0BA7EDA70418 /* Pods_VideoRecordingDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +63,8 @@
 			children = (
 				4C8707D9277CB8A5007D54F6 /* VideoRecordingDemo */,
 				4C8707D8277CB8A5007D54F6 /* Products */,
+				901877138E3D5304C1955F6B /* Pods */,
+				E1BA1600D26DBB94663CA9C3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +79,14 @@
 		4C8707D9277CB8A5007D54F6 /* VideoRecordingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4C870806277CEF2B007D54F6 /* AppSingleTon */,
+				4C870804277CE121007D54F6 /* SampleVideo_360x240_1mb.mp4 */,
+				4C870801277CDD33007D54F6 /* AppLibrary */,
+				4C8707FA277CCF9F007D54F6 /* AppExtension */,
+				4C8707F7277CCE7C007D54F6 /* AppConstrant */,
+				4C8707F2277CBA6F007D54F6 /* AppUtilities */,
+				4C8707F1277CB91C007D54F6 /* AppViewControllers */,
 				4C8707DA277CB8A5007D54F6 /* AppDelegate.swift */,
-				4C8707DC277CB8A5007D54F6 /* SceneDelegate.swift */,
-				4C8707DE277CB8A5007D54F6 /* ViewController.swift */,
 				4C8707E0277CB8A5007D54F6 /* Main.storyboard */,
 				4C8707E6277CB8A7007D54F6 /* Assets.xcassets */,
 				4C8707E8277CB8A7007D54F6 /* LaunchScreen.storyboard */,
@@ -70,6 +96,73 @@
 			path = VideoRecordingDemo;
 			sourceTree = "<group>";
 		};
+		4C8707F1277CB91C007D54F6 /* AppViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4C8707DE277CB8A5007D54F6 /* RecordingVC.swift */,
+				4C8707FF277CD849007D54F6 /* VideoPlayVC.swift */,
+			);
+			path = AppViewControllers;
+			sourceTree = "<group>";
+		};
+		4C8707F2277CBA6F007D54F6 /* AppUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				4C8707F5277CBF84007D54F6 /* UIViewControllerExtensions.swift */,
+				4C8707F3277CBA89007D54F6 /* CameraConfigration.swift */,
+			);
+			path = AppUtilities;
+			sourceTree = "<group>";
+		};
+		4C8707F7277CCE7C007D54F6 /* AppConstrant */ = {
+			isa = PBXGroup;
+			children = (
+				4C8707F8277CCE8F007D54F6 /* Constant.swift */,
+			);
+			path = AppConstrant;
+			sourceTree = "<group>";
+		};
+		4C8707FA277CCF9F007D54F6 /* AppExtension */ = {
+			isa = PBXGroup;
+			children = (
+				4C8707FB277CCFB4007D54F6 /* Extension.swift */,
+			);
+			path = AppExtension;
+			sourceTree = "<group>";
+		};
+		4C870801277CDD33007D54F6 /* AppLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				4C870802277CDD42007D54F6 /* Player.swift */,
+			);
+			path = AppLibrary;
+			sourceTree = "<group>";
+		};
+		4C870806277CEF2B007D54F6 /* AppSingleTon */ = {
+			isa = PBXGroup;
+			children = (
+				4C870807277CEF41007D54F6 /* SingleTon.swift */,
+			);
+			path = AppSingleTon;
+			sourceTree = "<group>";
+		};
+		901877138E3D5304C1955F6B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB2A1D56972E3B108F50616F /* Pods-VideoRecordingDemo.debug.xcconfig */,
+				885F5D7529464B20092877DD /* Pods-VideoRecordingDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E1BA1600D26DBB94663CA9C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				342E20B0677E638F6F61C8AD /* Pods_VideoRecordingDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4C8707EE277CB8A7007D54F6 /* Build configuration list for PBXNativeTarget "VideoRecordingDemo" */;
 			buildPhases = (
+				0EEF95893F134D8BC03B8054 /* [CP] Check Pods Manifest.lock */,
 				4C8707D3277CB8A4007D54F6 /* Sources */,
 				4C8707D4277CB8A4007D54F6 /* Frameworks */,
 				4C8707D5277CB8A4007D54F6 /* Resources */,
+				EC245ABEB6A15BE5EB221301 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,20 +226,69 @@
 				4C8707EA277CB8A7007D54F6 /* LaunchScreen.storyboard in Resources */,
 				4C8707E7277CB8A7007D54F6 /* Assets.xcassets in Resources */,
 				4C8707E2277CB8A5007D54F6 /* Main.storyboard in Resources */,
+				4C870805277CE121007D54F6 /* SampleVideo_360x240_1mb.mp4 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EEF95893F134D8BC03B8054 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VideoRecordingDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC245ABEB6A15BE5EB221301 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoRecordingDemo/Pods-VideoRecordingDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VideoRecordingDemo/Pods-VideoRecordingDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VideoRecordingDemo/Pods-VideoRecordingDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4C8707D3277CB8A4007D54F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C8707F4277CBA89007D54F6 /* CameraConfigration.swift in Sources */,
 				4C8707E5277CB8A5007D54F6 /* VideoRecordingDemo.xcdatamodeld in Sources */,
-				4C8707DF277CB8A5007D54F6 /* ViewController.swift in Sources */,
+				4C870800277CD849007D54F6 /* VideoPlayVC.swift in Sources */,
+				4C870808277CEF41007D54F6 /* SingleTon.swift in Sources */,
+				4C8707FC277CCFB4007D54F6 /* Extension.swift in Sources */,
+				4C8707DF277CB8A5007D54F6 /* RecordingVC.swift in Sources */,
 				4C8707DB277CB8A5007D54F6 /* AppDelegate.swift in Sources */,
-				4C8707DD277CB8A5007D54F6 /* SceneDelegate.swift in Sources */,
+				4C8707F6277CBF84007D54F6 /* UIViewControllerExtensions.swift in Sources */,
+				4C870803277CDD42007D54F6 /* Player.swift in Sources */,
+				4C8707F9277CCE8F007D54F6 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +365,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -276,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -288,10 +432,12 @@
 		};
 		4C8707EF277CB8A7007D54F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB2A1D56972E3B108F50616F /* Pods-VideoRecordingDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X4EFSF78D2;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -308,6 +454,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iMobDev.VideoRecordingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = App_Development_Profile;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -316,10 +463,12 @@
 		};
 		4C8707F0277CB8A7007D54F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 885F5D7529464B20092877DD /* Pods-VideoRecordingDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X4EFSF78D2;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -336,6 +485,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iMobDev.VideoRecordingDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = App_Development_Profile;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
